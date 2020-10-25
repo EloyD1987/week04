@@ -8,5 +8,11 @@
 
     console.log(add);
     */
- 
+   /*Crear dos variables de tipo String y concatenarlas guardando el resultado en 
+   una 3er variable.*/
+   var name = "Eloy";
+   var surname = " Dordolo";
+   var fullname = name + surname;
+   console.log( fullname);
+    
 
