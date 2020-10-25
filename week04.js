@@ -33,6 +33,13 @@
     */
     /*b-Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los
      primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
+    /*
     var favouritefilm = "underworld";
     var first5letters = favouritefilm.substring(0,5);
     console.log(first5letters);
+    */
+    /*c-Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los
+     últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
+    var favouritefilm = "underworld";
+    var last3letters = favouritefilm.substring(7,11);
+    console.log(last3letters);
