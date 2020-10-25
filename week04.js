@@ -27,5 +27,12 @@
 /*2-Strings
     /*a-Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en 
     mayúscula (utilizar toUpperCase).*/
+    /*
     var greeting = "good morning";
     console.log(greeting.toUpperCase());
+    */
+    /*b-Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los
+     primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
+    var favouritefilm = "underworld";
+    var first5letters = favouritefilm.substring(0,5);
+    console.log(first5letters);
