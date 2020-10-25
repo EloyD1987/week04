@@ -48,7 +48,14 @@
     /*d-Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la 
     primera letra en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable 
     (utilizar substring, toUpperCase, toLowerCase y el operador +).*/
+    /*
     var favouritefilm = "underworld";
-    var Favouritefilm =  favouritefilm.substring(0,1).toUpperCase() + favouritefilm.substring(1,11).toLowerCase();
-    console.log(Favouritefilm);
+    var Favouritefilm =  favouritefilm.substring(0,1).toUpperCase() + favouritefilm.substring(1,11).
+    toLowerCase(); console.log(Favouritefilm);
+    */
+    /*e- Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. 
+    Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf).*/
+    var greeting = "good morning";
+    var spacepos = greeting.indexOf(" ");
+    console.log(spacepos);
     
