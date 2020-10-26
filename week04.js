@@ -92,4 +92,7 @@
     months.shift();
     months.pop();
     /*console.log(months);*/
-    
+
+    /*e-Invertir el orden del array (utilizar reverse)*/
+    months.reverse();
+    console.log(months);
