@@ -181,13 +181,14 @@
   /*a-Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar 
   la función y guardar el resultado en una variable, mostrando el valor de dicha variable en la 
   consola del navegador.*/ 
+  /*
   function add(a, b) {
      return a + b;
   }
   var myadd = add(6,9);
 
   console.log(myadd);
-  
+  */
   /*b-A la función suma anterior, agregarle una validación para controlar si alguno de los 
   parámetros no es un número, mostrar una alerta aclarando que uno de los parámetros tiene error 
   y retornar el valor NaN como resultado.*/
@@ -204,12 +205,27 @@
   */
   /*c-Crear una función validate integer que reciba un número como parámetro y devuelva verdadero 
   si es un número entero*/
-
+   /*
   function validate(a) {
     if((typeof(a) === 'number') && ( a%1 === 0)){
         return true;  
     }
         return false;
-} 
-console.log(validate(132.8));
+  } 
+  console.log(validate(132.8));
+   */
+  /*d-A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean 
+  enteros. En caso que haya decimales mostrar un alerta con el error y retorna el número convertido 
+  a entero (redondeado).*/
 
+  function newadd2(a, b) {
+    if ((typeof(a) != "number") || (typeof(b) != "number")){
+        alert("One of the parameters is incorrect");
+        return("NaN");  
+    } if((typeof(a) === 'number') && ( a%1 === 0)) {
+        alert('one or more of the arguments is not integer');
+        return Math.round(a) + Math.round(b);
+    }
+    return a + b; 
+  }
+ console.log(newadd2(12,5.6));
