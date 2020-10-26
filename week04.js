@@ -192,13 +192,24 @@
   parámetros no es un número, mostrar una alerta aclarando que uno de los parámetros tiene error 
   y retornar el valor NaN como resultado.*/
 
-
- function add(a, b) {
+  /*
+  function newadd(a, b) {
     if ((typeof(a) === "number") && (typeof(b) === "number")){
         return a + b;   
     }
         alert("One of the parameters is incorrect");
         return("NaN");
 }
+  console.log(newadd(7,"hello"));
+  */
+  /*c-Crear una función validate integer que reciba un número como parámetro y devuelva verdadero 
+  si es un número entero*/
 
-  
+  function validate(a) {
+    if((typeof(a) === 'number') && ( a%1 === 0)){
+        return true;  
+    }
+        return false;
+} 
+console.log(validate(132.8));
+
