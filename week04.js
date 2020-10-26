@@ -202,10 +202,10 @@
         return("NaN");
 }
   console.log(newadd(7,"hello"));
-  */
+
   /*c-Crear una función validate integer que reciba un número como parámetro y devuelva verdadero 
   si es un número entero*/
-   /*
+ /*  
   function validate(a) {
     if((typeof(a) === 'number') && ( a%1 === 0)){
         return true;  
@@ -213,19 +213,36 @@
         return false;
   } 
   console.log(validate(132.8));
-   */
+   
   /*d-A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean 
   enteros. En caso que haya decimales mostrar un alerta con el error y retorna el número convertido 
   a entero (redondeado).*/
-
+/*
   function newadd2(a, b) {
     if ((typeof(a) != "number") || (typeof(b) != "number")){
         alert("One of the parameters is incorrect");
         return("NaN");  
-    } if((typeof(a) === 'number') && ( a%1 === 0)) {
+    } if((validate(a) != true) || (validate(b) != true )) {
         alert('one or more of the arguments is not integer');
         return Math.round(a) + Math.round(b);
     }
     return a + b; 
-  }
- console.log(newadd2(12,5.6));
+   }
+   console.log(newadd2(12,5));*/
+
+   /*e-Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la 
+   función suma probando que todo siga funcionando igual.*/
+
+   function newadd3(a, b) {
+    if ((typeof(a) === "number") && (typeof(b) === "number")){
+        return a + b;   
+    }
+        alert("One of the parameters is incorrect");
+        return("NaN");
+    }
+      function finaladd(a,b) {
+        return newadd3(a,b) ;
+     }
+     
+   
+     console.log(finaladd(2,1));
