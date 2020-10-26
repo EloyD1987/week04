@@ -32,15 +32,15 @@
     console.log(greeting.toUpperCase());
     */
     /*b-Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los
-     primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
+        primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
     /*
     var favouritefilm = "underworld";
     var first5letters = favouritefilm.substring(0,5);
     console.log(first5letters);
     */
     /*c-Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los
-     últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
-     /*
+        últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
+        /*
     var favouritefilm = "underworld";
     var last3letters = favouritefilm.substring(7,11);
     console.log(last3letters);
@@ -64,8 +64,18 @@
     entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string 
     que tenga la primera letra de ambas palabras en mayúscula y las demás letras en minúscula 
     (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).*/
+    /*
     var greeting = "good morning";
     console.log(greeting.indexOf("m"));
     var Greeting = greeting.substring(0,1).toUpperCase() + greeting.substring(1,4)+" "
-                   +greeting.substring(5,6).toUpperCase() + greeting.substring(6,12);
+                    +greeting.substring(5,6).toUpperCase() + greeting.substring(6,12);
     console.log(Greeting);
+    */
+/*3-Arrays
+    /*Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", 
+    "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 
+    (utilizar console.log)*/
+    var months = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre",
+                    "Octubre","Noviembre","Diciembre"]
+    console.log(months[4], months[10]);
+    
