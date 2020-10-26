@@ -83,8 +83,13 @@
     months.sort()
     /*console.log(months);*/
     
-   /*c-Agregar un elemento al principio y al final del array (utilizar unshift y push).*/
-   months.unshift("First");
-   months.push("Last");
-   console.log(months);
-   
+    /*c-Agregar un elemento al principio y al final del array (utilizar unshift y push).*/
+    months.unshift("First");
+    months.push("Last");
+    /*console.log(months);*/
+
+    /*d-Quitar un elemento del principio y del final del array (utilizar shift y pop).*/
+    months.shift();
+    months.pop();
+    /*console.log(months);*/
+    
