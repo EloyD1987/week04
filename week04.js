@@ -122,7 +122,7 @@
     */
    /*b-Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes 
    mensajes de alerta:*/
-   
+   /*
    var Age = Math.round(Math.random()*100);
 
    if ( Age < 2) {
@@ -140,5 +140,12 @@
    }else if (Age >= 75){
     alert("Anciano");
    }
-   
-   
+   */
+/*5-For 
+   /*a-Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de 
+   JavaScript para mostrar una alerta utilizando cada una de las palabras.*/
+
+   var Weekdays = ["Lunes","Martes","Miercoles","jueves","Viernes"];
+   for ( var i = 0; i < Weekdays.length ; i++){
+       alert(Weekdays[i]);
+   }
