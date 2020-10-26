@@ -75,13 +75,16 @@
     /*Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", 
     "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 
     (utilizar console.log)*/
-    /*
     var months = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre",
                     "Octubre","Noviembre","Diciembre"]
-    console.log(months[4], months[10]);
-    */
+    /*console.log(months[4], months[10]);*/
+    
     /*b- Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).*/
-    var months = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre",
-                   "Octubre","Noviembre","Diciembre"]
-    console.log(months.sort());
-
+    months.sort()
+    /*console.log(months);*/
+    
+   /*c-Agregar un elemento al principio y al final del array (utilizar unshift y push).*/
+   months.unshift("First");
+   months.push("Last");
+   console.log(months);
+   
