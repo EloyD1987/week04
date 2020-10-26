@@ -144,8 +144,14 @@
 /*5-For 
    /*a-Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de 
    JavaScript para mostrar una alerta utilizando cada una de las palabras.*/
-
-   var Weekdays = ["Lunes","Martes","Miercoles","jueves","Viernes"];
-   for ( var i = 0; i < Weekdays.length ; i++){
+    
+   var Weekdays = ["lunes","martes","miercoles","jueves","viernes"];
+   /*for ( var i = 0; i < Weekdays.length ; i++){
        alert(Weekdays[i]);
    }
+   */
+  /*b-Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una 
+  alerta por cada palabra modificada.*/
+  for ( var i = 0; i < Weekdays.length ; i++){
+    alert(Weekdays[i].substring(0,1).toUpperCase()+Weekdays[i].substring(1));
+}
