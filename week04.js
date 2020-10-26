@@ -170,9 +170,35 @@
   de la repetición, es decir que al final de la ejecución del bucle for deberia haber 10 elementos
   dentro del array, desde el número 0 hasta al numero 9. Mostrar por la consola del navegador el 
   al array final (utilizar console.log).*/
-  
+  /*
   var numbers = [" "];
   for ( var i = 0; i < 10 ; i++){
       numbers[i] =  i;
   }
   console.log(numbers);
+  */
+/*6-Funciones
+  /*a-Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar 
+  la función y guardar el resultado en una variable, mostrando el valor de dicha variable en la 
+  consola del navegador.*/ 
+  function add(a, b) {
+     return a + b;
+  }
+  var myadd = add(6,9);
+
+  console.log(myadd);
+  
+  /*b-A la función suma anterior, agregarle una validación para controlar si alguno de los 
+  parámetros no es un número, mostrar una alerta aclarando que uno de los parámetros tiene error 
+  y retornar el valor NaN como resultado.*/
+
+
+ function add(a, b) {
+    if ((typeof(a) === "number") && (typeof(b) === "number")){
+        return a + b;   
+    }
+        alert("One of the parameters is incorrect");
+        return("NaN");
+}
+
+  
