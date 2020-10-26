@@ -95,4 +95,8 @@
 
     /*e-Invertir el orden del array (utilizar reverse)*/
     months.reverse();
-    console.log(months);
+    /*console.log(months);*/
+
+    /*f-Unir todos los elementos del array en un único string donde cada mes este separado 
+    por un guión - (utilizar join).*/
+    console.log(months.join("-"));
